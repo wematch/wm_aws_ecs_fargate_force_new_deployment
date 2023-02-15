@@ -19,5 +19,5 @@ variable schedule {
         name            = "run-every-week"
         description     = "Fires Lambda every Sunday morning at 7 UTC"
         expression      = "cron(0 7 ? * SUN *)"
-    }   
+    }
 }
