@@ -52,7 +52,6 @@ resource aws_iam_policy policy {
 }
 
 resource aws_cloudwatch_event_rule schedule {
-    count               = var.create ? 1 : 0
     name                = var.schedule.name
     description         = var.schedule.description
     schedule_expression = var.schedule.expression
